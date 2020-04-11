@@ -1,0 +1,97 @@
+body{
+    background: url(../images/bg.png);
+}
+
+.site
+{
+    font-family: 'Holtwood One SC', sans-serif;
+}
+.text-logo
+{
+    font-family: 'Holtwood One SC', sans-serif;
+    color: #e7480f;
+    text-shadow: 2px 2px #ffd301;
+    font-size: 50px;
+    padding:40px 0px;
+    text-align: center;
+}
+.text-logo .glyphicon
+{
+    color: #ffd301;
+    text-shadow: 0px 0px #ffd301; /* J'annule le text shadow vu que le glyphicone est dans le text-logo il hérite de ses modifs */
+}
+
+.nav
+{
+    margin-bottom: 40px;
+}
+
+.thumbnail img{
+    background: #ffd301; /* Nos images sont des png, ce qui veut dire qu'elles gèrent la transparence // Elles sont détouré nos images, sinon ont aurait pas pu faire ça */
+}
+
+.price  /* Mettre en forme les prix */
+{
+    background: #5cb85c;
+    box-shadow: 0 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow:0 1px rgba(0,0,0,0.2);
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    position: absolute;
+    right:6px;
+    top:20px;
+    padding:5px 10px;
+    font-size:20px;
+    border-radius:3px;
+}
+
+.price::before      /* On utilise la pseudo classe before pour faire la petite boucle au dessus du prix // Pour dire, avant cet élément la tu me met un petit quelque chose. */
+{
+    border:4px solid transparent;
+    border-bottom: 4px solid #4a934a;
+    border-left:4px solid #4a934a;
+    content:""; /* Pour afficher cet élément de ce before je suis obligé de lui donner un contenu, même si il est vide. */
+    position: absolute;
+    right: 1px;
+    top:-8px;
+}
+
+.caption > h4 /* > Veut dire : le h4 qui est directement dans la class caption */
+{   /* > veut dire : L'élément enfant qui est juste en dessous, au 1er niveau dans l'arborescence */
+    color: #e7480f;
+    font-size: 18px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover
+{/* nav-pills c'était notre système de navigation, pills c'est le fait de faire les petits rectangle */
+    background: #e7480f;
+}
+.nav>li>a:focus, .nav>li>a:hover
+{   
+    color:#e7480f;
+    background-color: #eee;
+}
+.nav>li>a   /* S'il n'a pas de focus ni de hover */
+{
+    color:#eee;
+    font-size:18px;
+    text-shadow: 2px 2px #333;
+}
+
+.btn-order
+{
+    width: 100%;
+    padding:10px;
+    font-size: 16px;
+    color:#fff;
+    background-color: #e7480f;
+    text-decoration: none;  /* Vu que c'est un lien je ne veux pas la ligne du dessous, mais ont dirait que ici il ne le met pas mais on va quand même laisser cette ligne, ça ne fait pas de mal */
+    text-shadow: 2px 2px #333;
+}
+
+.btn-order:hover, .btn-order:focus
+{
+    color:#fff; /* La couleur du texte reste blanche pour passer au dessus de bootstrap */
+    background-color: #c13c0d;
+}

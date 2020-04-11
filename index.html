@@ -7,6 +7,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>   <!-- C'est une font de Google-Font -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -39,7 +41,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail"><!-- thumbnail pour donner un effet autour des éléments. -->
                                <img src="images/m1.png" alt="...">
-                                <div>8.90 €</div>
+                                <div class="price">8.90 €</div>
                                 <div class="caption"> <!-- caption = Pour dans la thumbnail, mettre tout les éléments en dessous de l'image. -->
                                     <h4>Menu Classic</h4>
                                     <p>Sandwich: Burger, Salade, Tomate, Cornichon + Frites + Boisson</p>
@@ -54,7 +56,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                <img src="images/m2.png" alt="...">
-                                <div>9.50 €</div>
+                                <div class="price">9.50 €</div>
                                 <div class="caption">
                                     <h4>Menu Bacon</h4>
                                     <p>Sandwich: Burger, Fromage, Bacon, Salade, Tomate + Frites + Boisson</p>
@@ -69,7 +71,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                <img src="images/m3.png" alt="...">
-                                <div>10.90 €</div>
+                                <div class="price">10.90 €</div>
                                 <div class="caption">
                                     <h4>Menu Big</h4>
                                     <p>Sandwich: Double Burger, Fromage, Cornichon, Salade + Frites + Boisson</p>
@@ -84,10 +86,10 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                <img src="images/m4.png" alt="...">
-                                <div>9.90 €</div>
+                                <div class="price">9.90 €</div>
                                 <div class="caption">
                                     <h4>Menu Chicken</h4>
-                                    <p>Sandwich: Burger, Salade, Tomate, CornichonPoulet Frit, Tomate, Salade, Mayonnaise + Frites + Boisson</p>
+                                    <p>Sandwich: Poulet Frit, Tomate, Salade, Mayonnaise + Frites + Boisson</p>
                                     <a href="#" class="btn btn-order" role="button">
                                         <span class="glyphicon glyphicon-shopping-cart"></span>
                                         Commander
@@ -99,7 +101,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                <img src="images/m5.png" alt="...">
-                                <div>10.90 €</div>
+                                <div class="price">10.90 €</div>
                                 <div class="caption">
                                     <h4>Menu Fish</h4>
                                     <p>Sandwich: Poisson, Salade, Matonnaise, Cornichon + Frites + Boisson</p>
@@ -114,7 +116,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                <img src="images/m6.png" alt="...">
-                                <div>11.90 €</div>
+                                <div class="price">11.90 €</div>
                                 <div class="caption">
                                     <h4>Menu Double Steak</h4>
                                     <p>Sandwich: Double Burger, Fromage, Bacon, Salade, Tomate + Frites + Boisson</p>
@@ -139,7 +141,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/b1.png" alt="...">
-                                <div>5.90 €</div>
+                                <div class="price">5.90 €</div>
                                 <div class="caption"> 
                                     <h4>Classic</h4>
                                     <p>Sandwich: Burger, Salade, Tomate, Cornichon</p>
@@ -154,7 +156,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/b2.png" alt="...">
-                                <div>6.50 €</div>
+                                <div class="price">6.50 €</div>
                                 <div class="caption">
                                     <h4>Bacon</h4>
                                     <p>Sandwich: Burger, Fromage, Bacon, Salade, Tomate</p>
@@ -169,7 +171,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/b3.png" alt="...">
-                                <div>6.90 €</div>
+                                <div class="price">6.90 €</div>
                                 <div class="caption">
                                     <h4>Big</h4>
                                     <p>Sandwich: Double Burger, Fromage, Cornichon, Salade,</p>
@@ -184,7 +186,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/b4.png" alt="...">
-                                <div>5.90 €</div>
+                                <div class="price">5.90 €</div>
                                 <div class="caption">
                                     <h4>Chicken</h4>
                                     <p>Sandwich: Poulet frit, Tomate, Salade, Mayonnaise</p>
@@ -199,7 +201,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/b5.png" alt="...">
-                                <div>6.50 €</div>
+                                <div class="price">6.50 €</div>
                                 <div class="caption">
                                     <h4>Fish</h4>
                                     <p>Sandwich: Poisson pané, Salade, Mayonnaise, Cornichon</p>
@@ -214,7 +216,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/b6.png" alt="...">
-                                <div>7.50 €</div>
+                                <div class="price">7.50 €</div>
                                 <div class="caption">
                                     <h4>Double Steak</h4>
                                     <p>Sandwich: Double Burger, Fromage, Bacon, Salade, Tomate</p>
@@ -239,7 +241,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/s1.png" alt="...">
-                                <div>3.90 €</div>
+                                <div class="price">3.90 €</div>
                                 <div class="caption"> 
                                     <h4>Frites</h4>
                                     <p>Pommes de terre frites</p>
@@ -254,7 +256,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/s2.png" alt="...">
-                                <div>3.40 €</div>
+                                <div class="price">3.40 €</div>
                                 <div class="caption">
                                     <h4>Onion Rings</h4>
                                     <p>Rondelles d'oignon frits</p>
@@ -269,7 +271,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/s3.png" alt="...">
-                                <div>5.90 €</div>
+                                <div class="price">5.90 €</div>
                                 <div class="caption">
                                     <h4>Nuggets</h4>
                                     <p>Nuggets de poulet frits</p>
@@ -284,7 +286,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/s4.png" alt="...">
-                                <div>3.50 €</div>
+                                <div class="price">3.50 €</div>
                                 <div class="caption">
                                     <h4>Nuggets Fromage</h4>
                                     <p>Nuggets de fromage frits</p>
@@ -299,7 +301,7 @@
                         <div class ="col-sm-6 col-md-4">
                             <div class="thumbnail">
                                 <img src="images/s5.png" alt="...">
-                                <div>5.90 €</div>
+                                <div class="price">5.90 €</div>
                                 <div class="caption">
                                     <h4>Ailes de poulet</h4>
                                     <p>Ailes de poulet barbecue</p>
@@ -324,7 +326,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/sa1.png" alt="...">
-                                    <div>8.90 €</div>
+                                    <div class="price">8.90 €</div>
                                     <div class="caption"> 
                                         <h4>César Poulet Pané</h4>
                                         <p>Poulet pané, Salade, Tomate et la fameuse sauce césar</p>
@@ -339,7 +341,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/sa2.png" alt="...">
-                                    <div>8.90 €</div>
+                                    <div class="price">8.90 €</div>
                                     <div class="caption">
                                         <h4>César Poulet Grillé</h4>
                                         <p>Poulet grillé, Salade, Tomate et la fameuse sauce césar</p>
@@ -354,7 +356,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/sa3.png" alt="...">
-                                    <div>5.90 €</div>
+                                    <div class="price">5.90 €</div>
                                     <div class="caption">
                                         <h4>Salade Light</h4>
                                         <p>Salade, Tomate, Concombre, Maïs et Vinaigre Balsamique</p>
@@ -369,7 +371,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/sa4.png" alt="...">
-                                    <div>7.90 €</div>
+                                    <div class="price">7.90 €</div>
                                     <div class="caption">
                                         <h4>Poulet Pané</h4>
                                         <p>Poulet Pané, Salade, Tomate et la sauce de votre choix</p>
@@ -384,7 +386,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/sa5.png" alt="...">
-                                    <div>7.90 €</div>
+                                    <div class="price">7.90 €</div>
                                     <div class="caption">
                                         <h4>Poulet grillé</h4>
                                         <p>Poulet Grillé, Salade, Tomate et la sauce de votre choix</p>
@@ -410,7 +412,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/bo1.png" alt="...">
-                                    <div>1.90 €</div>
+                                    <div class="price">1.90 €</div>
                                     <div class="caption"> 
                                         <h4>Coca-Cola</h4>
                                         <p>Au choix : Petit, Moyen ou Grand</p>
@@ -425,7 +427,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/bo2.png" alt="...">
-                                    <div>1.90 €</div>
+                                    <div class="price">1.90 €</div>
                                     <div class="caption">
                                         <h4>Coca-Cola Light</h4>
                                         <p>Au choix : Petit, Moyen ou Grand</p>
@@ -440,7 +442,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/bo3.png" alt="...">
-                                    <div>1.90 €</div>
+                                    <div class="price">1.90 €</div>
                                     <div class="caption">
                                         <h4>Coca-Cola Zéro</h4>
                                         <p>Au choix : Petit, Moyen ou Grand</p>
@@ -455,7 +457,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/bo4.png" alt="...">
-                                    <div>1.90 €</div>
+                                    <div class="price">1.90 €</div>
                                     <div class="caption">
                                         <h4>Fanta Orange</h4>
                                         <p>Au choix : Petit, Moyen ou Grand</p>
@@ -470,7 +472,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/bo5.png" alt="...">
-                                    <div>1.90 €</div>
+                                    <div class="price">1.90 €</div>
                                     <div class="caption">
                                         <h4>Sprite</h4>
                                         <p>Au choix : Petit, Moyen ou Grand</p>
@@ -485,7 +487,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/bo6.png" alt="...">
-                                    <div>1.90 €</div>
+                                    <div class="price">1.90 €</div>
                                     <div class="caption">
                                         <h4>Nestea</h4>
                                         <p>Au choix : Petit, Moyen ou Grand</p>
@@ -509,7 +511,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/d1.png" alt="...">
-                                    <div>4.90 €</div>
+                                    <div class="price">4.90 €</div>
                                     <div class="caption"> 
                                         <h4>Fondant au chocolat</h4>
                                         <p>Au choix : chocolat blanc ou au lait</p>
@@ -524,7 +526,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/d2.png" alt="...">
-                                    <div>2.90 €</div>
+                                    <div class="price">2.90 €</div>
                                     <div class="caption">
                                         <h4>Muffin</h4>
                                         <p>Au choix : au fruits ou au chocolat</p>
@@ -539,7 +541,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/d3.png" alt="...">
-                                    <div>2.90 €</div>
+                                    <div class="price">2.90 €</div>
                                     <div class="caption">
                                         <h4>Beignet</h4>
                                         <p>Au choix : au chocolat ou à la vanille</p>
@@ -554,7 +556,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/d4.png" alt="...">
-                                    <div>3.90 €</div>
+                                    <div class="price">3.90 €</div>
                                     <div class="caption">
                                         <h4>Milkshake</h4>
                                         <p>Au choix : fraise, vanille ou chocolat</p>
@@ -569,7 +571,7 @@
                             <div class ="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="images/d5.png" alt="...">
-                                    <div>4.90 €</div>
+                                    <div class="price">4.90 €</div>
                                     <div class="caption">
                                         <h4>Sundae</h4>
                                         <p>Au choix : fraise, caramel ou chocolat</p>
