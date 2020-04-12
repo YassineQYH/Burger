@@ -95,3 +95,12 @@ body{
     color:#fff; /* La couleur du texte reste blanche pour passer au dessus de bootstrap */
     background-color: #c13c0d;
 }
+
+/* ADMIN */
+
+.admin
+{
+    background: #fff;
+    padding: 50px;
+    border-radius:10px;
+}
