@@ -22,8 +22,8 @@
             <div class="row">
                 <h1><strong>Liste des items <a href="insert.php" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"> Ajouter</a></h1>
 
-                <table class="table table-striped table-bordered"> <!-- table => Le tableau // table-striped => C'est ce qui fait qu'il y a une ligne grise et une ligne blanche à chaque fois. --> 
-                    <thead><!-- Cette table est composé du header = C'est la 1ere ligne, là où on met le nom des colonnes  -->
+                <table class="table table-striped table-bordered"> <!-- table => Le tableau // table-striped => C'est ce qui fait qu'il y a une ligne grise et une ligne blanche à chaque fois. // table-bordered => pour les bordures de tous les côtés du tableau et des cellules. --> 
+                    <thead class="thead-dark"><!-- Cette table est composé du header = C'est la 1ere ligne, là où on met le nom des colonnes // thead-dark pour avoir un thème sombre sur cette ligne -->
                         <tr><!-- tr => Une ligne // C'est comme row-->
                             <th>Nom</th>
                             <th>Description</th>
@@ -69,7 +69,7 @@
                                 echo '<tr>';
                                 echo '<td>' . $item['name'] . '</td>';  // Je concatène avec une information qui vient de la BDD. Ici, on a dit que la ligne s'appele $item, je vais mettre la variable que j'ai envie d'afficher, la variable c'est le champ nom que j'ai mis dans ma BDD
                                 echo '<td>' . $item['description'] . '</td>'; // Ici, le champ s'appelait description.
-                                echo '<td>' . $item['price'] . '</td>';
+                                echo '<td>' . number_format((float)$item['price'],2,'.','') . '</td>'; // Fonction number_format => pour mettre 2 chiffres après la virgule. Au cas ou le prix est pas un float je le transforme en float(avec des décimals) Elle à 4 arguments(valeur,combien de chiffre après la virgule,ce qui sépare les entier des décimals c'est un point,vide pour quand un chiffre est supérieur à 1000 des fois on peut mettre une virgule pour dire c'est 3,000 qui signifie 3000. Nous on va laisser vide)
                                 echo '<td>' . $item['category'] . '</td>';
                                 echo '<td width=300>';  /* btn-default => blanc / btn-primary => bleu / btn-danger => rouge */
                                 echo '<a class="btn btn-default" href="view.php?id=' . $item['id'] . '"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>'; // La, je vais lui donner des id car, je veux voir un item donc je veux updater donc ce qui m'importe c'est la ligne spécifique, je la désigne avec l'id
@@ -80,6 +80,8 @@
                                 echo '</td>';
                                 echo '</tr>';
                             }
+                                // Quand on a fini, on va déconnecter notre $database car ça ne sert à rien de laisser une connection ouverte.
+                                Database::disconnect();
                         ?>
 
 
