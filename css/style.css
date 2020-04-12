@@ -104,3 +104,8 @@ body{
     padding: 50px;
     border-radius:10px;
 }
+/* Insert */
+.help-inline
+{
+    color:red;
+}

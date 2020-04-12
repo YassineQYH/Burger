@@ -82,7 +82,7 @@
                             <label>Description:</label><?php echo ' ' . $item['description'];?>
                         </div> 
                         <div class="form-group">
-                            <label>Prix:</label><?php echo ' ' . number_format((float)$item['price'],2,'.',''); ?>  <!-- Fonction number_format => pour mettre 2 chiffres après la virgule. Au cas ou le prix est pas un float je le transforme en float(avec des décimals) Elle à 4 arguments(valeur,combien de chiffre après la virgule,ce qui sépare les entier des décimals c'est un point,vide pour quand un chiffre est supérieur à 1000 des fois on peut mettre une virgule pour dire c'est 3,000 qui signifie 3000. Nous on va laisser vide) -->
+                            <label>Prix:</label><?php echo ' ' . number_format((float)$item['price'],2,'.','') . ' €'; ?>  <!-- Fonction number_format => pour mettre 2 chiffres après la virgule. Au cas ou le prix est pas un float je le transforme en float(avec des décimals) Elle à 4 arguments(valeur,combien de chiffre après la virgule,ce qui sépare les entier des décimals c'est un point,vide pour quand un chiffre est supérieur à 1000 des fois on peut mettre une virgule pour dire c'est 3,000 qui signifie 3000. Nous on va laisser vide) -->
                         </div> 
                         <div class="form-group">
                             <label>Categorie:</label><?php echo ' ' . $item['category'];?>
@@ -102,7 +102,7 @@
                 <div class="col-sm-6 site">
                             <div class="thumbnail"><!-- thumbnail pour donner un effet autour des éléments. -->
                                <img src="<?php echo '../images/' . $item['image'] ; ?>" alt="...">
-                                <div class="price"><?php echo number_format((float)$item['price'],2,'.',''); ?></div>
+                                <div class="price"><?php echo number_format((float)$item['price'],2,'.','') . ' €'; ?></div>
                                 <div class="caption"> <!-- caption = Pour dans la thumbnail, mettre tout les éléments en dessous de l'image. -->
                                     <h4><?php echo $item['name'];?></h4>
                                     <p><?php echo $item['description'];?></p>
