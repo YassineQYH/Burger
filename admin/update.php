@@ -75,7 +75,7 @@ if(!empty($_GET['id']))
             }
             if($isUploadSuccess)   
             {       
-                if(!move_upload_file($_FILES["image"]["tmp_name"], $imagePath)) 
+                if(!move_uploaded_file($_FILES["image"]["tmp_name"], $imagePath)) 
                 {  
                     $imageError = "Il y a eu une erreur lors de l'upload"; 
                     $isUploadSuccess = false;
