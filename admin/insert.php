@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(!isset($_SESSION['email']))
+{
+    header("Location: login.php");
+}
+
     require 'database.php';
 
     // J'écris toute les variables sur les erreurs qui vont nous donner les msg d'erreurs

@@ -1,0 +1,13 @@
+Dans phpmyadmin
+
+Créer une table users
+    Insérer les champs : 
+        id => INT => en I_C
+        email => VARCHAR 100
+        password => VARCHAR 100
+
+        Insérer une ligne dans cette table 
+            Rentrer un mail : q-destiny@live.be
+            Rentrer un mdp  : Burger.19
+
+Dans la table users apparait bien une ligne avec les données que je viens de rentrer.

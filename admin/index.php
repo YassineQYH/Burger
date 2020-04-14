@@ -1,3 +1,13 @@
+<?php
+
+session_start();    // Et je recopie ça sur toute les page admins que je veux proteger par un compte et un mdp présent dans ma BDD
+if(!isset($_SESSION['email']))
+{
+    header("Location: login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>

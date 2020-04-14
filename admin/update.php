@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(!isset($_SESSION['email']))
+{
+    header("Location: login.php");
+}
+
     require 'database.php';
 
 //  On récupère le id avec la méthode GET
